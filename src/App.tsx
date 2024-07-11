@@ -1,10 +1,11 @@
-import { Button } from "@/components/ui/button";
+import { ThemeProvider } from "@/context/theme-provider.tsx";
+import { ModeToggle } from "./components/ui/mode-toggle";
 
 function App() {
   return (
-    <>
-      <Button>Click me</Button>
-    </>
+    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+      <ModeToggle />
+    </ThemeProvider>
   );
 }
 
