@@ -1,10 +1,10 @@
 import { ThemeProvider } from "@/context/theme-provider.tsx";
-import { ModeToggle } from "./components/ui/mode-toggle";
+import Home from "./home/Home";
 
 function App() {
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-      <ModeToggle />
+      <Home />
     </ThemeProvider>
   );
 }
